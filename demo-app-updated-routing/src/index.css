@@ -414,7 +414,7 @@ main {
 
 #menu:hover {
   transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translateX(-40%);
+  transform: translateX(-30%);
 }
 
 .menu-inner {
