@@ -21,7 +21,7 @@ class CourseHome extends Component {
   
   render() {
     return (
-      <body style={{ backgroundColor: "#26394e", minHeight: "100" }}>
+      <body id="courseBody">
         <SideBar />
 
         <header id="courseHeader">

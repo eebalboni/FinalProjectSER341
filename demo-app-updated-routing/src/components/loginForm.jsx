@@ -112,7 +112,7 @@ class LoginForm extends Form {
 
           <footer>
             <div class="text-center fixed-bottom pb-3" id="loginFooter">
-              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2022
+              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2023
             </div>
           </footer>
         </div>

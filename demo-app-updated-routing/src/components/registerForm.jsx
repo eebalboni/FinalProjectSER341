@@ -110,7 +110,7 @@ class RegisterForm extends Form {
 
           <footer>
             <div className="text-center fixed-bottom pb-2" id="loginFooter">
-              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2022
+              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2023
             </div>
           </footer>
         </div>

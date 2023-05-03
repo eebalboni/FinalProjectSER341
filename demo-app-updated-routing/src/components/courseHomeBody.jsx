@@ -23,7 +23,7 @@ class CourseHomeBody extends Component {
                 className="bd-placeholder-img card-img-top"
                 style={{ borderRadius: 0 }}
               />
-              <div className="card-body">
+              <div className="card-body" id="courseCardBody">
                 <p className="card-text fw-bold fs-6">
                   <strong>{course.course}</strong>
                 </p>
