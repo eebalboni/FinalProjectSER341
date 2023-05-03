@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Joi from "joi-browser";
 import Input from "./input";
 import Select from "./select";
+import { register } from "../services/userService";
 
 class Form extends Component {
   state = {
@@ -28,12 +29,12 @@ class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-
+    const {data}  = this.state;
     const errors = this.validate();
     this.setState({ errors: errors || {} });
     if (errors) return;
 
-    this.doSubmit();
+    register(data);
   };
 
   handleChange = ({ currentTarget: input }) => {

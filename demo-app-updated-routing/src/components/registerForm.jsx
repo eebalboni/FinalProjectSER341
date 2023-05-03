@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Joi from "joi-browser";
 import Form from "../common/form";
 import * as userService from "../services/userService";
@@ -18,6 +18,7 @@ class RegisterForm extends Form {
   };
 
   doSubmit = async () => {
+
     try {
       const response = await userService.register(this.state.data);
       auth.loginWithJwt(response.headers["x-access-token"]);
@@ -33,7 +34,7 @@ class RegisterForm extends Form {
 
   render() {
     return (
-      <body id="loginBody">
+      <body id="loginBody" onSubmit={this.handleSubmit}>
         <div className="background">
           <span></span>
           <span></span>
@@ -87,18 +88,11 @@ class RegisterForm extends Form {
                         <div className="form-outline form-white mb-4">
                           <form styles="{{}}" onSubmit={this.handleSubmit}>
                             {this.renderInput("username", "Username")}
-                            
-                            {this.renderInput(
-                              "password",
-                              "Password",
-                              "password"
-                            )}
-                            {this.renderInput("firstname", "Firstname")}
-                            {this.renderInput("lastname", "Lastname")}
+                            {this.renderInput("password","Password","password")}
+                            {this.renderInput("firstname", "First Name")}
+                            {this.renderInput("lastname", "Last Name")}
+                            <div className="mt-3">{this.renderButton("Sign Up")}</div>
                           </form>
-
-                          
-                          <div className="mt-3">{this.renderButton("Sign Up")}</div>
                         </div>
                       </div>
                     </div>
@@ -110,7 +104,7 @@ class RegisterForm extends Form {
 
           <footer>
             <div className="text-center fixed-bottom pb-2" id="loginFooter">
-              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2022
+              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2023
             </div>
           </footer>
         </div>

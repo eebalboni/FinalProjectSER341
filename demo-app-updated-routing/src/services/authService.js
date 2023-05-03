@@ -3,7 +3,7 @@ import http from "./httpService";
 import * as config from "../config.json";
 
 const { apiUrl } = config;
-const apiEndpoint = apiUrl + "users/";
+const apiEndpoint = apiUrl + "/";
 const tokenKey = "token";
 
 http.setJwt(getJwt());
@@ -13,7 +13,6 @@ export async function login(username, password) {
     username,
     password,
   });
-
   localStorage.setItem(tokenKey, jwt);
 }
 
@@ -39,6 +38,7 @@ export function getCurrentUser() {
 export function getJwt() {
   return localStorage.getItem(tokenKey);
 }
+
 const exportedMethods = {
   login,
   loginWithJwt,

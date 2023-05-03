@@ -1,8 +1,9 @@
-
 import React from "react";
 import Joi from "joi-browser";
 import Form from "../common/form";
 import auth from "../services/authService";
+import { Link } from "react-router-dom";
+
 
 class LoginForm extends Form {
   state = {
@@ -19,8 +20,8 @@ class LoginForm extends Form {
     try {
       const { data } = this.state;
       await auth.login(data.username, data.password);
-      // const { state } = this.props.location;
-      window.location = "/courseHome"; // state ? state.from.pathname : "/";
+      //const { state } = this.props.location; //go back to change this so it matches student or professor
+      window.location = "/student/courseHome"; // state ? state.from.pathname : "/";
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };
@@ -94,13 +95,9 @@ class LoginForm extends Form {
                         <div>
                           <p class="mb-0">
                             Don't have an account?{" "}
-                            <a
-                              href="../indexes/SignUp.html"
-                              class="text-white-50"
-                            >
-                              Sign Up
-                            </a>
+                            <Link to="/register" className="btn btn-dark" >Sign up</Link>
                           </p>
+                          
                         </div>
                       </div>
                     </div>
