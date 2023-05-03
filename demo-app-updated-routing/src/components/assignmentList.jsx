@@ -43,7 +43,7 @@ function AssignmentList() {
                 Logout
               </a>
             </li>
-            <li class="menu-item" id="sidebarlistItem">
+            <li className="menu-item" id="sidebarlistItem">
               <a
                 onClick={() => (window.location = "/student/courseHome")}
                 id="sidebarItem"

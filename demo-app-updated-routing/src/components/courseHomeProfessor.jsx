@@ -35,7 +35,7 @@ class CourseHomeProfessor extends Component {
                 Logout
               </a>
             </li>
-            <li class="menu-item" id="sidebarlistItem">
+            <li className="menu-item" id="sidebarlistItem">
           <a href="../indexes/student-roster-screen.html" id="sidebarItem">Roster</a>
         </li>
         <li class="menu-item" id="sidebarlistItem">

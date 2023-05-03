@@ -14,6 +14,7 @@ import AccountSelect from "./components/accountSelect";
 import CourseHome from "./components/courseHome";
 import AssignmentList from "./components/assignmentList";
 import FileUploadForm from "./components/assignment";
+import FileUploadFormProfessor from "./components/AssignmentProfessor";
 import AssignmentListProfessor from "./components/assignmentListProfessor";
 import AssignmentForm from "./components/createAssignment";
 import CourseHomeProfessor from "./components/courseHomeProfessor";
@@ -40,7 +41,7 @@ function App() {
           <Route path="/" element={<AccountSelect />} />
           <Route path="/student/courseHome" element={<CourseHome />} />
           <Route path="/student/assignmentList" element={<AssignmentList />} />
-          <Route path="/student/assignment" element={<FileUploadForm />} />
+          <Route path="/student/assignment" element={<FileUploadFormProfessor />} />
 
           <Route path="/professor/courseHome" element={<CourseHomeProfessor />} />
           <Route path="/professor/assignmentList" element={<AssignmentListProfessor />} />
