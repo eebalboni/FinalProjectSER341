@@ -32,7 +32,7 @@ function AssignmentForm() {
             </li>
             <li className="menu-item" id="sidebarlistItem">
               <a
-                onClick={() => (window.location = "/student/assignmentList")}
+                onClick={() => (window.location = "/professor/assignmentList")}
                 id="sidebarItem"
               >
                 Home
@@ -40,7 +40,7 @@ function AssignmentForm() {
             </li>
             <li class="menu-item" id="sidebarlistItem">
               <a
-                onClick={() => (window.location = "/student/courseHome")}
+                onClick={() => (window.location = "/professor/courseHome")}
                 id="sidebarItem"
               >
                 Courses

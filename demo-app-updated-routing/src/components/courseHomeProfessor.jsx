@@ -39,7 +39,7 @@ class CourseHomeProfessor extends Component {
           <a href="../indexes/student-roster-screen.html" id="sidebarItem">Roster</a>
         </li>
         <li class="menu-item" id="sidebarlistItem">
-          <a data-bs-toggle="modal" data-bs-target="#addcourseModal" id="sidebarItem">Add Course</a>
+          <a onClick={() => window.location='/professor/createAssignment'} id="sidebarItem">Add Course</a>
         </li>
           </ul>
         </div>

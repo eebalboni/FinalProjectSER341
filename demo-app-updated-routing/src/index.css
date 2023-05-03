@@ -423,19 +423,6 @@ main {
   position: relative;
 }
 
-#blob {
-  top: 0;
-  z-index: -1;
-  right: 60px;
-  transform: translateX(100%);
-  height: 100%;
-  position: absolute;
-}
-
-#blob-path {
-  height: 100%;
-  fill: #184a7e;
-}
 
 .hamburger {
   right: 17px;
@@ -487,6 +474,7 @@ h1 {
 #sidebarItem {
   color: white;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
   
 }
 
@@ -555,3 +543,35 @@ h1 {
   font-size: 15pt;
   text-shadow: 2px 2px 5px black;
 }
+
+.assignment-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.assignment-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+}
+
+.assignment-item h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.assignment-item p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.due-date {
+  font-weight: bold;
+}
+

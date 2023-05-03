@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { getCourses } from "../services/courseService";
 import CourseHomeBody from "./courseHomeBody";
+import BasicModal from "./modal";
 
 //make sidebar separate component
 
@@ -30,18 +31,12 @@ class CourseHome extends Component {
           <div className="menu-inner">
             <ul className="menu-list">
               <li className="menu-item" id="sidebarlistItem">
-                <a onClick={() => window.location='/'} id="sidebarItem">
+                <a onClick={() => (window.location = "/")} id="sidebarItem">
                   Logout
                 </a>
               </li>
               <li className="menu-item" id="sidebarlistItem">
-                <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#joincourseModal"
-                  id="sidebarItem"
-                >
-                  Join Course
-                </a>
+                <BasicModal />
               </li>
             </ul>
           </div>
