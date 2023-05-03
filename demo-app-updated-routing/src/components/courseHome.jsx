@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { getCourses } from "../services/courseService";
 import CourseHomeBody from "./courseHomeBody";
-import SideBar from "./sideBar";
+import BasicModal from "./modal";
 
 //make sidebar separate component
 
@@ -18,11 +18,29 @@ class CourseHome extends Component {
   handleSearch = (event) => {
     this.setState({ query: event.target.value });
   };
-  
+
   render() {
     return (
       <body id="courseBody">
-        <SideBar />
+        <div id="menu">
+          <div className="hamburger">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+          <div className="menu-inner">
+            <ul className="menu-list">
+              <li className="menu-item" id="sidebarlistItem">
+                <a onClick={() => (window.location = "/")} id="sidebarItem">
+                  Logout
+                </a>
+              </li>
+              <li className="menu-item" id="sidebarlistItem">
+                <BasicModal />
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <header id="courseHeader">
           <div className="container p-4">
@@ -39,8 +57,6 @@ class CourseHome extends Component {
             <CourseHomeBody courses={this.state.courses} />
           </table>
         </React.Fragment>
-
-
       </body>
     );
   }
