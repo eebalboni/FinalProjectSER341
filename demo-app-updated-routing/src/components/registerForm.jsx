@@ -74,13 +74,13 @@ class RegisterForm extends Form {
                     className="card text-white" id="cardlogin"
                     styles="border-radius: 1rem;"
                   >
-                    <div className="card-body p-5 pb-3 text-center">
-                      <div className="mb-md-2 mt-md-2">
+                    <div className="card-body p-5 pb-2 pt-3 text-center">
+                      <div className="mb-md-1 mt-md-1">
                         <h2 className="fw-bold mb-2 pb-2" id="loginTitle">
                           Welcome to Auto Grader
                         </h2>
 
-                        <p className="pb-4" id="loginDesc">
+                        <p className="pb-1" id="loginDesc">
                           Please fill in the following to Sign Up!
                         </p>
 
@@ -98,7 +98,7 @@ class RegisterForm extends Form {
                           </form>
 
                           
-                          <div className="mt-5">{this.renderButton("Sign Up")}</div>
+                          <div className="mt-3">{this.renderButton("Sign Up")}</div>
                         </div>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ class RegisterForm extends Form {
           </main>
 
           <footer>
-            <div className="text-center fixed-bottom pb-3" id="loginFooter">
+            <div className="text-center fixed-bottom pb-2" id="loginFooter">
               Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2022
             </div>
           </footer>

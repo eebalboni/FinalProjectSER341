@@ -312,6 +312,7 @@
 .form-outline,
 #loginDesc {
   color: rgb(197, 197, 197);
+  font-size: 12pt;
 }
 
 #loginTitle {
