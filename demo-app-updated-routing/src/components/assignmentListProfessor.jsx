@@ -30,24 +30,72 @@ const assignments = [
 
 function AssignmentListProfessor() {
   return (
-    <div className="assignment-list-container">
-      <h1>Assignments</h1>
-      {/* <button
-      onClick={window.location='/professor/createAssignment'}>Create Assignment</button> */}
-      {assignments.map((assignment) => (
-        <div key={assignment.id} className="assignment-item"
-        onClick={() => { window.location ='/professor/assignment'  }}>
-            
-          <h2>{assignment.title}</h2>
-          <p>{assignment.name}</p>
-          <p>{assignment.description}</p>
-          <p className="due-date">Due Date: {assignment.date}</p>
+    <body id="courseBody">
+      <div id="menu">
+        <div className="hamburger">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
         </div>
-       
-      ))}
-    <button onClick={() => window.location='/professor/createAssignment'}>Add assignment</button>
-    </div>
-    
+        <div className="menu-inner">
+          <ul className="menu-list">
+            <li className="menu-item" id="sidebarlistItem">
+              <a onClick={() => window.location='/'} id="sidebarItem">
+                Logout
+              </a>
+            </li>
+            <li class="menu-item" id="sidebarlistItem">
+              <a onClick={() => window.location='/professor/courseHome'} id="sidebarItem">
+                Courses
+              </a>
+            </li>
+            <li class="menu-item" id="sidebarlistItem">
+              <a
+                onClick={() =>
+                  (window.location = "/professor/createAssignment")
+                }
+                id="sidebarItem"
+              >
+                Create Assignment
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <header id="courseHeader">
+        <div className="container p-4">
+          <div className="row-cols-auto">
+            <div>
+              <h3 id="courseTitle">CSC 215 - Algorthim Design and Analysis</h3>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div className="container mt-4" style={{ marginRight: 20 }}>
+        <h4>Assignments</h4>
+      </div>
+
+      <div className="container mt-4">
+        {/* <button
+      onClick={window.location='/professor/createAssignment'}>Create Assignment</button> */}
+        {assignments.map((assignment) => (
+          <div
+            key={assignment.id}
+            className="assignment-item"
+            onClick={() => {
+              window.location = "/professor/assignment";
+            }}
+          >
+            <h2>{assignment.title}</h2>
+            <p>{assignment.name}</p>
+            <p>{assignment.description}</p>
+            <p className="due-date" style={{ color: "red" }}>Due Date: {assignment.date}</p>
+          </div>
+        ))}
+      </div>
+    </body>
   );
 }
 

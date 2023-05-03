@@ -47,7 +47,8 @@ class AccountSelect extends Component {
             <div class="container" style={{ marginTop: 150 }}>
               <div class="row align-items-center">
                 <div class="col-3 mx-auto">
-                  <div class="card shadow border" id="courseCard">
+                  <div class="card shadow border" id="courseCard"
+                  onClick={() => window.location='/login'}>
                     <div
                       class="card-body d-flex flex-column align-items-center"
                       id="courseCardBody"
@@ -67,7 +68,8 @@ class AccountSelect extends Component {
                   </div>
                 </div>
                 <div class="col-3 mx-auto">
-                  <div class="card shadow border" id="courseCard">
+                  <div class="card shadow border" id="courseCard"
+                  onClick={() => window.location='/login'}>
                     <div
                       class="card-body d-flex flex-column align-items-center"
                       id="courseCardBody"
