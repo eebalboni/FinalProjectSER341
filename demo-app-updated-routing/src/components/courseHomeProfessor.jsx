@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { getCourses } from "../services/courseService";
-import CourseHomeBody from "./courseHomeBody";
+import CourseHomeBodyProfessor from "./courseHomeBodyProfessor";
 
 //make sidebar separate component
 
@@ -58,7 +58,7 @@ class CourseHomeProfessor extends Component {
 
         <React.Fragment>
           <table className="container mt-5">
-            <CourseHomeBody courses={this.state.courses} />
+            <CourseHomeBodyProfessor courses={this.state.courses} />
           </table>
         </React.Fragment>
 

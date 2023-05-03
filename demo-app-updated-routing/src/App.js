@@ -46,6 +46,7 @@ function App() {
           <Route path="/professor/courseHome" element={<CourseHomeProfessor />} />
           <Route path="/professor/assignmentList" element={<AssignmentListProfessor />} />
           <Route path="/professor/createAssignment" element={<AssignmentForm />} />
+          <Route path = "/professor/assignment" element={<FileUploadFormProfessor/>}/>
          
         </Routes>
       </BrowserRouter>
