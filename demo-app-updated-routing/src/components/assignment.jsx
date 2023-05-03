@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style-course-view.css";
+
 
 function FileUploadForm() {
   const [file, setFile] = useState(null);

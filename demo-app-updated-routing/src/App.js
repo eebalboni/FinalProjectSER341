@@ -10,13 +10,14 @@ import LoginForm from "./components/loginForm";
 import RegisterForm from "./components/registerForm";
 import auth from "./services/authService";
 import Logout from "./components/logout";
-
+import AccountSelect from "./components/accountSelect";
 import CourseHome from "./components/courseHome";
 import AssignmentList from "./components/assignmentList";
 import FileUploadForm from "./components/assignment";
 import AssignmentListProfessor from "./components/assignmentListProfessor";
 import AssignmentForm from "./components/createAssignment";
 import CourseHomeProfessor from "./components/courseHomeProfessor";
+import Sidebar from "./components/sideBar";
 
 function App() {
   const [user, setUser] = useState("");
@@ -28,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <BrowserRouter>
         <NavBar user={user} />
         <Routes>

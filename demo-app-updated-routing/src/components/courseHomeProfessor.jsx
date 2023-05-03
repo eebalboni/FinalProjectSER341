@@ -1,4 +1,4 @@
-import "./style-course-view.css";
+
 import React, { Component } from "react";
 import { getCourses } from "../services/courseService";
 import CourseHomeBodyProfessor from "./courseHomeBodyProfessor";

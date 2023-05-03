@@ -33,16 +33,88 @@ class RegisterForm extends Form {
 
   render() {
     return (
-      <div>
-        <h1>Register</h1>
-        <form onSubmit={this.handleSubmit}>
-          {this.renderInput("username", "Username")}
-          {this.renderInput("password", "Password", "password")}
-          {this.renderInput("firstname", "Firstname")}
-          {this.renderInput("lastname", "Lastname")}
-          {this.renderButton("Register")}
-        </form>
-      </div>
+      <body id="loginBody">
+        <div className="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <main>
+            <div className="container py-4 h-100">
+              <div className="row d-flex justify-content-center align-items-center h-100">
+                <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+                  <div
+                    className="card text-white" id="cardlogin"
+                    styles="border-radius: 1rem;"
+                  >
+                    <div className="card-body p-5 pb-3 text-center">
+                      <div className="mb-md-2 mt-md-2">
+                        <h2 className="fw-bold mb-2 pb-2" id="loginTitle">
+                          Welcome to Auto Grader
+                        </h2>
+
+                        <p className="pb-4" id="loginDesc">
+                          Please fill in the following to Sign Up!
+                        </p>
+
+                        <div className="form-outline form-white mb-4">
+                          <form styles="{{}}" onSubmit={this.handleSubmit}>
+                            {this.renderInput("username", "Username")}
+                            
+                            {this.renderInput(
+                              "password",
+                              "Password",
+                              "password"
+                            )}
+                            {this.renderInput("firstname", "Firstname")}
+                            {this.renderInput("lastname", "Lastname")}
+                          </form>
+
+                          
+                          <div className="mt-5">{this.renderButton("Sign Up")}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <footer>
+            <div className="text-center fixed-bottom pb-3" id="loginFooter">
+              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2022
+            </div>
+          </footer>
+        </div>
+      </body>
     );
   }
 }

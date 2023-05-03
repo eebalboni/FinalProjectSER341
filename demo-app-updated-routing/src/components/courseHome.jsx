@@ -1,4 +1,3 @@
-import "./style-course-view.css";
 import React, { Component } from "react";
 import { getCourses } from "../services/courseService";
 import CourseHomeBody from "./courseHomeBody";
@@ -19,17 +18,17 @@ class CourseHome extends Component {
   handleSearch = (event) => {
     this.setState({ query: event.target.value });
   };
-
+  
   render() {
     return (
       <body style={{ backgroundColor: "#26394e", minHeight: "100" }}>
         <SideBar />
 
-        <header>
+        <header id="courseHeader">
           <div className="container p-4">
             <div className="row-cols-auto">
               <div>
-                <h3>Courses</h3>
+                <h3 id="courseTitle">Courses</h3>
               </div>
             </div>
           </div>

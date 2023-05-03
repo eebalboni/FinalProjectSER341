@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style-course-view.css';
+
 
 function AssignmentForm() {
   const [title, setTitle] = useState("");

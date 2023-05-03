@@ -13,7 +13,7 @@ class CourseHomeBody extends Component {
         {courses.map((course, index) => (
           <td key={index}>
             <div
-              className="card shadow-lg border-0"
+              className="card shadow-lg border-0" id="courseCard"
               style={{ marginLeft: "35px", width: "25rem" }}
               onClick={() => { window.location ='/student/assignmentList'  }}
             >
