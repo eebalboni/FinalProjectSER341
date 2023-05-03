@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar user={user} />
+      
         <Routes>
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />       

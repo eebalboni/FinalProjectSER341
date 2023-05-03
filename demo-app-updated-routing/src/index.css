@@ -406,14 +406,15 @@ main {
   position: fixed;
   background-color: #184a7e;
   width: 200px;
-  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateX(-100%);
-  left: 60px;
+  left: 50px;
+  position: absolute;
+  z-index: 9;
 }
 
-#menu.expanded {
-  transform: translateX(0%);
-  left: 0px;
+#menu:hover {
+  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-40%);
 }
 
 .menu-inner {
@@ -437,11 +438,11 @@ main {
 }
 
 .hamburger {
-  right: 20px;
+  right: 17px;
   position: absolute;
   width: 20px;
   height: 20px;
-  margin-top: -10px;
+  margin-top: 30px;
 }
 
 .hamburger .line {
@@ -480,4 +481,22 @@ h1 {
   color: #fff;
   font-family: sans-serif;
   margin-bottom: 15px;
+  
 }
+
+#sidebarItem {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#sidebarItem:hover {
+  color: rgba(134, 143, 147, 0.675);
+}
+
+#sidebarlistItem {
+  border-bottom: 3px solid white;
+  text-align: center;
+}
+
+
