@@ -334,7 +334,7 @@
   background: #c72059;
 }
 
-#loginFooter {
+footer {
   color: white;
 }
 
@@ -367,7 +367,136 @@ main {
   border: 0;
 }
 
+#courseCardBody {
+  background-image: linear-gradient(white, white);
+}
+
 #courseModalLabel {
   color: black;
   text-shadow: 0px 0px 0px transparent;
 }
+
+#courseCard:hover {
+  transform: scale(1.05);
+  transition: transform 300ms ease-in-out;
+  box-shadow: 0px 15px 20px -3px black !important;
+}
+
+.album {
+  display: flex;
+}
+
+#courseBody {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #26394e;
+}
+
+#assignments,
+#studentNames,
+#rosterCourse {
+  color: black;
+  background-color: white;
+}
+
+#menu {
+  height: 100%;
+  position: fixed;
+  background-color: #184a7e;
+  width: 200px;
+  transform: translateX(-100%);
+  left: 50px;
+  position: absolute;
+  z-index: 9;
+}
+
+#menu:hover {
+  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-30%);
+}
+
+.menu-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#blob {
+  top: 0;
+  z-index: -1;
+  right: 60px;
+  transform: translateX(100%);
+  height: 100%;
+  position: absolute;
+}
+
+#blob-path {
+  height: 100%;
+  fill: #184a7e;
+}
+
+.hamburger {
+  right: 17px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger .line:nth-child(3) {
+  bottom: 0;
+}
+
+h1 {
+  position: fixed;
+  right: 0;
+  margin: 0;
+}
+
+.menu-list {
+  padding: 0;
+  list-style: none;
+  width: 50%;
+  margin-left: 20%;
+  position: absolute;
+  top: 20px;
+}
+
+.menu-list,
+.menu-item {
+  color: #fff;
+  font-family: sans-serif;
+  margin-bottom: 15px;
+  
+}
+
+#sidebarItem {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#sidebarItem:hover {
+  color: rgba(134, 143, 147, 0.675);
+}
+
+#sidebarlistItem {
+  border-bottom: 3px solid white;
+  text-align: center;
+}
+
+

@@ -31,13 +31,13 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar user={user} />
+      
         <Routes>
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />       
           <Route path="/logout" element={<Logout />} />
           <Route path="/not-found" element={<NotFound />} />
-
+          <Route path="/" element={<AccountSelect />} />
           <Route path="/student/courseHome" element={<CourseHome />} />
           <Route path="/student/assignmentList" element={<AssignmentList />} />
           <Route path="/student/assignment" element={<FileUploadForm />} />

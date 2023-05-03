@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class SideBar extends Component {
   constructor(props) {
     super(props);
@@ -16,15 +15,13 @@ class SideBar extends Component {
         </div>
         <div className="menu-inner">
           <ul className="menu-list">
-            <li className="menu-item">
-              <a href="../indexes/SignIn.html">Logout</a>
+            <li className="menu-item" id="sidebarlistItem">
+              <a href="../indexes/SignIn.html" id="sidebarItem">
+                Logout
+              </a>
             </li>
-            <li className="menu-item">
-              <a
-                data-bs-toggle="modal"
-                data-bs-target="#joincourseModal"
-                href="#"
-              >
+            <li className="menu-item" id="sidebarlistItem">
+              <a data-bs-toggle="modal" data-bs-target="#joincourseModal" id="sidebarItem">
                 Join Course
               </a>
             </li>

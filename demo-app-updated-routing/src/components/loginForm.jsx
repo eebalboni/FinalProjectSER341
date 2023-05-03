@@ -13,7 +13,7 @@ class LoginForm extends Form {
 
   schema = {
     username: Joi.string().required().label("Username"),
-    password: Joi.string().required().label("Password"),
+    password: Joi.string().required().min(5).label("Password"),
   };
 
   doSubmit = async () => {
@@ -109,7 +109,7 @@ class LoginForm extends Form {
 
           <footer>
             <div class="text-center fixed-bottom pb-3" id="loginFooter">
-              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2022
+              Chris Rocco - Emily Balboni - Amber Kusma &copy; Quinnipiac 2023
             </div>
           </footer>
         </div>
