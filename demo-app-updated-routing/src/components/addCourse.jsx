@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function AddCourse() {
   const [title, setTitle] = useState("");
-  const [instructor, setInstructor] = useState("");
+  const [code, setCode] = useState("");
   const [name, setName] = useState("");
   const [file, setFile] = useState(null);
 
@@ -75,18 +75,18 @@ function AddCourse() {
                   id="name"
                   type="text"
                   value={name}
-                  onChange={(e) => setTitle(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </div>
             <div className="row mt-4">
               <div className="form-group">
-                <h5>Instructor</h5>
+                <h5>Course Code</h5>
                 <input
-                  id="instructor"
-                  type="text"
-                  value={instructor}
-                  onChange={(e) => setTitle(e.target.value)}
+                  id="code"
+                  type="number"
+                  value={code}
+                  onChange={(e) => setCode(e.target.value)}
                 />
               </div>
             </div>
