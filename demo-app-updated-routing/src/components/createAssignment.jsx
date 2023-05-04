@@ -91,6 +91,7 @@ function AssignmentForm() {
               <div className="form-group">
                 <h5>Instruction</h5>
                 <textarea
+                style={{width: 330}}
                   id="description"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
