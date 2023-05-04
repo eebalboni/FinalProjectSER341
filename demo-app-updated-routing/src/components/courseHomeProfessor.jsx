@@ -17,34 +17,36 @@ class CourseHomeProfessor extends Component {
   handleSearch = (event) => {
     this.setState({ query: event.target.value });
   };
-  
+
   render() {
     return (
       <body id="courseBody">
-        
         <div id="menu">
-        <div className="hamburger">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+          <div className="hamburger">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+          <div className="menu-inner">
+            <ul className="menu-list">
+              <li className="menu-item" id="sidebarlistItem">
+                <a onClick={() => (window.location = "/")} id="sidebarItem">
+                  Logout
+                </a>
+              </li>
+              <li class="menu-item" id="sidebarlistItem">
+                <a
+                  onClick={() =>
+                    (window.location = "/professor/addCourse")
+                  }
+                  id="sidebarItem"
+                >
+                  Add Course
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="menu-inner">
-          <ul className="menu-list">
-            <li className="menu-item" id="sidebarlistItem">
-              <a onClick={() => window.location='/'} id="sidebarItem">
-                Logout
-              </a>
-            </li>
-            <li className="menu-item" id="sidebarlistItem">
-          <a href="../indexes/student-roster-screen.html" id="sidebarItem">Roster</a>
-        </li>
-        <li class="menu-item" id="sidebarlistItem">
-          <a onClick={() => window.location='/professor/createAssignment'} id="sidebarItem">Add Course</a>
-        </li>
-          </ul>
-        </div>
-      </div>
-
 
         <header id="courseHeader">
           <div className="container p-4">
@@ -61,8 +63,6 @@ class CourseHomeProfessor extends Component {
             <CourseHomeBodyProfessor courses={this.state.courses} />
           </table>
         </React.Fragment>
-
-
       </body>
     );
   }

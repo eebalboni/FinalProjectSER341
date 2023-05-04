@@ -5,7 +5,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 
 import NotFound from "./components/notFound";
 import { BrowserRouter } from "react-router-dom";
-
+import AddCourse from "./components/addCourse";
 import LoginForm from "./components/loginForm";
 import RegisterForm from "./components/registerForm";
 import auth from "./services/authService";
@@ -41,7 +41,7 @@ function App() {
           <Route path="/student/courseHome" element={<CourseHome />} />
           <Route path="/student/assignmentList" element={<AssignmentList />} />
           <Route path="/student/assignment" element={<FileUploadForm />} />
-
+          <Route path="/professor/addCourse" element={<AddCourse />} />
           <Route path="/professor/courseHome" element={<CourseHomeProfessor />} />
           <Route path="/professor/assignmentList" element={<AssignmentListProfessor />} />
           <Route path="/professor/createAssignment" element={<AssignmentForm />} />

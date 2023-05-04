@@ -403,12 +403,11 @@ main {
 
 #menu {
   height: 100%;
-  position: fixed;
   background-color: #184a7e;
   width: 200px;
   transform: translateX(-100%);
   left: 50px;
-  position: absolute;
+  position: fixed;
   z-index: 9;
 }
 
@@ -574,4 +573,3 @@ h1 {
 .due-date {
   font-weight: bold;
 }
-

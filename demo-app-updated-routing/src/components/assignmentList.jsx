@@ -25,6 +25,15 @@ const assignments = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus nostrum laboriosam tenetur nihil similique maxime eligendi, dolore animi fugiat incidunt veniam quaerat hic sint maiores nobis rem sunt consequuntur!",
     date: "3/30/23",
   },
+  {
+    id: 4,
+    title: "Assignment 4",
+    name: "lorem lorem lorem",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus nostrum laboriosam tenetur nihil similique maxime eligendi, dolore animi fugiat incidunt veniam quaerat hic sint maiores nobis rem sunt consequuntur!",
+    date: "3/30/23",
+  },
+  
 ];
 
 function AssignmentList() {
