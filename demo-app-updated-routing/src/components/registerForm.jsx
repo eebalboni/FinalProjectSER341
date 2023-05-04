@@ -20,7 +20,8 @@ class RegisterForm extends Form {
   doSubmit = async () => {
 
     try {
-      const response = await userService.register(this.state.data);
+      //console.log(this.state.data);
+      const response = await userService.signup(this.state.data);
       auth.loginWithJwt(response.headers["x-access-token"]);
       window.location = "/student/courseHome";
     } catch (ex) {
@@ -33,6 +34,7 @@ class RegisterForm extends Form {
   };
 
   render() {
+    console.log("this is the registration form");
     return (
       <body id="loginBody" onSubmit={this.handleSubmit}>
         <div className="background">

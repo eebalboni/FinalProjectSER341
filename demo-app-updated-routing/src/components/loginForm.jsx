@@ -15,14 +15,19 @@ class LoginForm extends Form {
     username: Joi.string().required().label("Username"),
     password: Joi.string().required().min(5).label("Password"),
   };
-
+ 
   doSubmit = async () => {
     try {
+      console.log("made it to dosumbit");
       const { data } = this.state;
-      await auth.login(data.username, data.password);
-      //const { state } = this.props.location; //go back to change this so it matches student or professor
+       await auth.login(data.username, data.password);
+      //console.log(response);
+     // auth.loginWithJwt(response.body);
+      
+      // const { state } = this.props.location;
       window.location = "/student/courseHome"; // state ? state.from.pathname : "/";
     } catch (ex) {
+      console.log(ex);
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };
         errors.username = ex.response.data;
@@ -32,8 +37,9 @@ class LoginForm extends Form {
   };
 
   render() {
+     //console.log("this is the login form");
     return (
-      <body id="loginBody">
+      <body id="loginBody" onSubmit={this.handleSubmit}>
         <div class="background">
           <span></span>
           <span></span>
@@ -87,9 +93,10 @@ class LoginForm extends Form {
                               "Password",
                               "password"
                             )}
+                            <div className="mt-5">{this.renderButton("Sign In")}</div>
                           </form>
 
-                          <div className="mt-5">{this.renderButton("Sign In")}</div>
+                          
                         </div>
 
                         <div>

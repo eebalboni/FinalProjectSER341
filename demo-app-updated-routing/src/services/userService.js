@@ -3,7 +3,7 @@ import * as config from "../config.json";
 
 const { apiUrl } = config;
 
-const apiEndpoint = apiUrl + "/";
+const apiEndpoint = apiUrl;
 
 export function register(Student) {
   return http.post(apiEndpoint, {
@@ -12,8 +12,11 @@ export function register(Student) {
     lastname: Student.lastname,
     firstname: Student.firstname,
   });
+
 }
 
 export function signup(data){
-  return http.post(`${apiEndpoint}/register`,data);
+  console.log(data);
+  return http.post(`${apiEndpoint}signup`,data);
 }
+

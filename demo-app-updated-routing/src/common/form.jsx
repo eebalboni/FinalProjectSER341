@@ -28,13 +28,14 @@ class Form extends Component {
   };
 
   handleSubmit = e => {
+    console.log("made it to handle");
     e.preventDefault();
     const {data}  = this.state;
     const errors = this.validate();
     this.setState({ errors: errors || {} });
     if (errors) return;
-
-    register(data);
+    //signup(data);
+    this.doSubmit();
   };
 
   handleChange = ({ currentTarget: input }) => {
