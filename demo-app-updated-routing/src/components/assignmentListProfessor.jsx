@@ -1,5 +1,4 @@
 import React from "react";
-import "./AssignmentList.css"; // import CSS stylesheet
 
 const assignments = [
   {

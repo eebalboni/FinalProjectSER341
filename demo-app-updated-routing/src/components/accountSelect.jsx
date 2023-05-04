@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import professorlogo from "./professorIcon.jpeg";
-import studentlogo from "./studentIcon.png";
+import professorlogo from "../img/professorIcon.jpeg";
+import studentlogo from "../img/studentIcon.png";
 import { Link } from "react-router-dom";
 
 class AccountSelect extends Component {

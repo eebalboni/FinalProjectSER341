@@ -1,6 +1,6 @@
 import { useState, React, useEffect } from "react";
 
-import NavBar from "./components/navBar";
+
 import { Route, Routes, Navigate } from "react-router-dom";
 
 import NotFound from "./components/notFound";
@@ -18,7 +18,6 @@ import FileUploadFormProfessor from "./components/AssignmentProfessor";
 import AssignmentListProfessor from "./components/assignmentListProfessor";
 import AssignmentForm from "./components/createAssignment";
 import CourseHomeProfessor from "./components/courseHomeProfessor";
-import Sidebar from "./components/sideBar";
 
 function App() {
   const [user, setUser] = useState("");
@@ -41,7 +40,7 @@ function App() {
           <Route path="/" element={<AccountSelect />} />
           <Route path="/student/courseHome" element={<CourseHome />} />
           <Route path="/student/assignmentList" element={<AssignmentList />} />
-          <Route path="/student/assignment" element={<FileUploadFormProfessor />} />
+          <Route path="/student/assignment" element={<FileUploadForm />} />
 
           <Route path="/professor/courseHome" element={<CourseHomeProfessor />} />
           <Route path="/professor/assignmentList" element={<AssignmentListProfessor />} />

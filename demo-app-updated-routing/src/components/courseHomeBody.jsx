@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import logo from "./SER340img.png";
+import logo from "../img/SER340img.png";
+import logo2 from "../img/CSC215img.jpeg";
 import { Link } from "react-router-dom";
 
 class CourseHomeBody extends Component {
@@ -18,10 +19,10 @@ class CourseHomeBody extends Component {
               onClick={() => { window.location ='/student/assignmentList'  }}
             >
               <img
-                src={logo}
+                src={logo2}
                 alt="Logo"
                 className="bd-placeholder-img card-img-top"
-                style={{ borderRadius: 0 }}
+                style={{ borderRadius: 0,height: 225 }}
               />
               <div className="card-body" id="courseCardBody">
                 <p className="card-text fw-bold fs-6">
