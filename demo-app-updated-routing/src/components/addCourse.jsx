@@ -11,10 +11,6 @@ function AddCourse() {
     // Do something with the form data
   };
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
-  };
-
   return (
     <body id="courseBody">
       <div id="menu">
