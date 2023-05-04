@@ -72,7 +72,7 @@ function AssignmentListProfessor() {
         </div>
       </header>
 
-      <div className="container mt-4" style={{ marginRight: 20 }}>
+      <div className="container mt-4" style={{ marginRight: 40 }}>
         <h4>Assignments</h4>
       </div>
 
